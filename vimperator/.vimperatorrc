@@ -1,0 +1,13 @@
+nnoremap J <C-d>
+nnoremap K <C-u>
+
+nnoremap h :tabprevious<CR>
+nnoremap l :tabnext<CR>
+
+
+set hinttags=//input[not(@type=\'hidden\')]\ |\ //xhtml:input[not(@type=\'hidden\')]\ |\ //a\ |\ //xhtml:a\ |\ //area\ |\ //xhtml:area\ |\ //iframe\ |\ //xhtml:iframe\ |\ //textarea\ |\ //xhtml:textarea\ |\ //button\ |\ //xhtml:button\ |\ //select\ |\ //xhtml:select\ |\ //*[@onclick[not(contains(@class,'thing'))]\ or\ @onmouseover\ or\ @onmousedown\ or\ @onmouseup\ or\ @oncommand\ or\ @role=\'link\'or\ @role=\'button\'\ or\ @role=\'checkbox\'\ or\ @role=\'combobox\'\ or\ @role=\'listbox\'\ or\ @role=\'listitem\'\ or\ @role=\'menuitem\'\ or\ @role=\'menuitemcheckbox\'\ or\ @role=\'menuitemradio\'\ or\ @role=\'option\'\ or\ @role=\'radio\'\ or\ @role=\'scrollbar\'\ or\ @role=\'slider\'\ or\ @role=\'spinbutton\'\ or\ @role=\'tab\'\ or\ @role=\'textbox\'\ or\ @role=\'treeitem\'\ or\ @tabindex]
+
+hi Hint::after -append font-size: 11px; font-family: Helvetica, Arial, sans-serif;
+
+set gui=none
+set gui=tabs
