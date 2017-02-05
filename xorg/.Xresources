@@ -29,9 +29,9 @@
 *color15: #ffffff
 ! Urxvt
 urxvt.scrollBar: false
-urxvt.font: xft:Terminus:10
-!urxvt.font: xft:Iosevka:pixelsize=14:antialiasing=true
-
+!urxvt.font: -*-iosevka-regular-*-*-*-10-*-*-*-*-*-iso10646-1
+!urxvt.font: xft:Terminus:pixelsize=14
+URxvt.font: xft:Terminess\ Powerline:pixelsize=14:antialias=true:hinting=true
 urxvt.keysym.M-Escape: perl:keyboard-select:activate
 urxvt.keysym.M-s: perl:keyboard-select:search
 
@@ -50,4 +50,3 @@ URxvt.matcher.button: 1
 !urxvt.depth: 32
 !urxvt.background: #11100e
 !urxvt.foreground: #8c7d63
-*dpi: 192

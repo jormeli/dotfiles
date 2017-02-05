@@ -1,7 +1,7 @@
-setxkbmap 'fi'
-xrdb -merge  ~/.Xresources
-xrandr --dpi 192
-xmodmap -e "keycode 133 = Escape"
-compton -b
-feh --bg-center ~/80s+City.jpg
-exec i3
+#!/bin/sh
+
+xset -b
+
+xsetroot -cursor_name left_ptr
+
+[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
