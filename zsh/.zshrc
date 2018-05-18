@@ -24,5 +24,6 @@ fi
 alias clbin="curl -F 'clbin=<-' https://clbin.com"
 alias mkcd='_(){ mkdir $1; cd $1; }; _'
 
+source ~/Documents/ai-infra/scripts/envsetup.zsh
+
 xset -dpms s off
-. /home/aleksi/torch/install/bin/torch-activate

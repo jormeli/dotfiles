@@ -44,10 +44,10 @@ bindsym $mod+d exec dmenu_run
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+odiaeresis focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -56,10 +56,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+odiaeresis move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -73,7 +73,7 @@ bindsym $mod+minus scratchpad show
 
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+b split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -160,14 +160,14 @@ bindsym $mod+r mode "resize"
 
 
 # screen lock
-bindsym $mod+z exec ~/.config/scripts/lockscreen.sh
+bindsym $mod+z exec ~/.local/bin/lockscreen.sh
 
 # play/pause music
-bindsym $mod+p exec playerctl -p
+#bindsym $mod+p exec playerctl -p
 
 # set music volume
-bindsym $mod+Prior exec playerctl -v 5
-bindsym $mod+Next exec playerctl -v -5
+bindsym $mod+Prior exec pactl set-sink-volume 2 +5%
+bindsym $mod+Next exec pactl set-sink-volume 2 -5%
 
 # connect/disconnect headphones
 bindsym $mod+Shift+b exec conheadset
@@ -184,5 +184,5 @@ for_window [class="Firefox"] border pixel 0
 # finds out, if available)
 bar {
 #        mode hide
-        status_command status.py 
+        status_command i3status
 }

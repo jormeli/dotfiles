@@ -7,7 +7,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 " Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'rust-lang/rust.vim' 
@@ -37,6 +37,8 @@ set listchars=tab:>~,nbsp:_,trail:.
 set list
 set autoindent
 set smartindent
+
+set relativenumber
 
 set wrap
 
