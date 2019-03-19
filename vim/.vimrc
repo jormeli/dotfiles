@@ -2,19 +2,19 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-"Plugin 'Valloric/YouCompleteMe'
-" Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdtree'
-Plugin 'rust-lang/rust.vim' 
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'rhysd/vim-clang-format'
-
-call vundle#end()            " required
+"set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#begin()
+"
+"" let Vundle manage Vundle, required
+"Plugin 'VundleVim/Vundle.vim'
+""Plugin 'Valloric/YouCompleteMe'
+"" Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/nerdtree'
+"Plugin 'rust-lang/rust.vim' 
+"Plugin 'altercation/vim-colors-solarized'
+"Plugin 'rhysd/vim-clang-format'
+"
+"call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
@@ -31,7 +31,8 @@ filetype plugin indent on    " required
 
 set expandtab
 set tabstop=4
-set shiftwidth=8
+set shiftwidth=4
+set smarttab
 
 set listchars=tab:>~,nbsp:_,trail:.
 set list

@@ -9,7 +9,7 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod4
+set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -62,10 +62,10 @@ bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+#bindsym $mod+Shift+Left move left
+#bindsym $mod+Shift+Down move down
+#bindsym $mod+Shift+Up move up
+#bindsym $mod+Shift+Right move right
 
 
 bindsym $mod+Shift+minus move scratchpad
@@ -158,6 +158,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# move workspace
+bindsym $mod+Shift+Left move workspace to output left
+bindsym $mod+Shift+Right move workspace to output right
 
 # screen lock
 bindsym $mod+z exec ~/.local/bin/lockscreen.sh
@@ -166,8 +169,8 @@ bindsym $mod+z exec ~/.local/bin/lockscreen.sh
 #bindsym $mod+p exec playerctl -p
 
 # set music volume
-bindsym $mod+Prior exec pactl set-sink-volume 2 +5%
-bindsym $mod+Next exec pactl set-sink-volume 2 -5%
+bindsym $mod+Prior exec pactl set-sink-volume 1 +5%
+bindsym $mod+Next exec pactl set-sink-volume 1 -5%
 
 # connect/disconnect headphones
 bindsym $mod+Shift+b exec conheadset
